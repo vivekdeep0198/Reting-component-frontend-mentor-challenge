@@ -1,0 +1,125 @@
+  @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root{
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;   
+}
+#main{
+    width: 95%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+}
+.card{
+    width: 323px;
+    height: 370px;
+    padding: 10px;
+    background: var(--VeryDarkBlue);
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    
+}
+.img img{
+    background-color: var(--DarkBlue);
+    border: 1px solid;
+    border-radius: 60%;
+    border-color: var(--VeryDarkBlue);
+    width: 45px;
+    display: grid;
+    padding: 10px;
+    place-items: center;
+    height: 45px;
+    margin-block: 10px 15px;
+}
+
+h1{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400 ;
+    color: var(--White);
+    font-size: 25px;
+    margin-block: 10px 15px;
+}
+p{
+    font-family: 'Overpass', sans-serif;
+    color: var(--MediumGrey);
+    font-size: 15px;
+    font-weight: 400;
+    margin-block: 10px 15px;
+}
+.card .btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 10px 15px;
+}
+.Icon{
+    background-color: var(--DarkBlue);
+    border: 1px solid;
+    border-radius: 50%;
+    place-items: center;
+    border-color: var(--DarkBlue);
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    color: var(--LightGrey);
+    transition: var(--Orange);
+}
+.Icon:hover{
+    background-color: var(--LightGrey);
+    color: var(--VeryDarkBlue);
+}
+.submit-btn{
+    margin-block: 10px 15px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    background-color: var(--Orange);
+    border-color: var(--LightGrey);
+    color: var(--White);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+button{
+    width: 85%;
+    margin: 0 auto;
+}
+.hide{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background: var(--VeryDarkBlue);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.hide img,i,h1,p{
+    margin-block: 5px 20px;
+}
+.star{
+    padding: 10px;
+    background-color: var(--DarkBlue);
+    color: var(--Orange);
+    border-radius: 15px;
+    font-weight: 100;
+    font-family: 'Overpass', sans-serif;
+}
+
+
